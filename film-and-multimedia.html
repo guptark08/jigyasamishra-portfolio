@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Film & Multimedia | Jigyasa Mishra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script>
+      tailwind = window.tailwind || {}
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ink: '#202020',
+              paper: '#FEFFFF',
+              highlight: '#f1e754',
+              footer: '#c9c9c9',
+            },
+            fontFamily: {
+              sans: ['Montserrat', 'Helvetica Neue', 'Arial', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="h-screen overflow-hidden bg-paper font-sans text-ink antialiased max-lg:h-auto max-lg:overflow-auto">
+    <main class="relative h-screen w-full overflow-hidden px-5 py-[27px] sm:px-8 lg:px-10 max-lg:h-auto max-lg:min-h-screen max-lg:overflow-visible max-lg:px-2 max-lg:py-2">
+      <header class="mb-6 hidden max-lg:block">
+        <div class="flex items-center justify-between text-[10px] leading-none text-ink">
+          <a href="index.html" class="font-medium hover:text-[rgba(32,32,32,0.68)]">Jigyasa Mishra</a>
+          <button type="button" class="hover:text-[rgba(32,32,32,0.68)]" onclick="setMobileMenu(true)">Menu</button>
+        </div>
+        <div class="mt-3 border-t border-ink"></div>
+      </header>
+
+      <div id="mobile-menu" class="fixed inset-0 z-[100] hidden h-full min-h-screen w-full overflow-y-auto bg-white px-6 py-6 text-ink shadow-2xl" style="background-color: #FEFFFF !important;">
+        <div class="flex items-center justify-between border-b border-ink/15 pb-4">
+          <span class="text-sm font-bold tracking-tight text-ink">Jigyasa Mishra</span>
+          <button type="button" class="rounded border border-ink/20 px-3 py-1 text-xs font-medium text-ink transition hover:bg-ink hover:text-paper" onclick="setMobileMenu(false)">Close</button>
+        </div>
+        <div class="mt-6">
+          <nav aria-label="Mobile contact links" class="mb-7 grid gap-2.5 text-xs text-ink/85">
+            <a href="mailto:jigsindia40@gmail.com" class="inline-flex w-fit items-center gap-2 hover:text-ink">
+              <svg class="h-3.5 w-3.5 shrink-0" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path d="M1 2h10v8H1z" class="fill-none stroke-current" stroke-width="1" />
+                <path d="m1 2 5 4 5-4" class="fill-none stroke-current" stroke-width="1" />
+              </svg>
+              <span>Email</span>
+            </a>
+            <a href="https://www.instagram.com/TheJigyasaJournal" class="inline-flex w-fit items-center gap-2 hover:text-ink">
+              <svg class="h-3.5 w-3.5 shrink-0" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <rect x="1" y="1" width="10" height="10" rx="2.5" class="fill-none stroke-current" stroke-width="1" />
+                <circle cx="6" cy="6" r="2.25" class="fill-none stroke-current" stroke-width="1" />
+                <circle cx="8.95" cy="2.95" r="0.6" fill="currentColor" />
+              </svg>
+              <span>Instagram</span>
+            </a>
+            <a href="https://x.com/apkijigyasa?lang=en" class="inline-flex w-fit items-center gap-2 hover:text-ink" aria-label="Twitter">
+              <svg class="h-3.5 w-3.5 shrink-0" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path d="M2 1.7h2.2l2.1 3 2.6-3h1.2L6.8 5.5 10.3 10H8.1L5.8 6.8 3 10H1.8l3.5-4L2 1.7Zm1 .7 5.5 6.9h.8L3.8 2.4H3Z" fill="currentColor" />
+              </svg>
+              <span>Twitter</span>
+            </a>
+            <a href="press-and-panels.html" class="inline-flex w-fit items-center gap-2 hover:text-ink">
+              <svg class="h-3.5 w-3.5 shrink-0" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <circle cx="6" cy="6" r="4.5" class="fill-none stroke-current" stroke-width="1" />
+                <path d="M5.8 3.6a.7.7 0 1 1 0 1.4.7.7 0 0 1 0-1.4ZM5.4 5.8h.8v2.8h-.8z" fill="currentColor" />
+              </svg>
+              <span>Press &amp; Panels</span>
+            </a>
+          </nav>
+
+          <div class="mb-6 border-t border-ink/10"></div>
+
+          <nav aria-label="Mobile portfolio sections">
+            <ul class="grid gap-4 text-xs font-semibold tracking-wider text-ink">
+              <li><a href="index.html" class="hover:text-[rgba(32,32,32,0.68)]">HOME</a></li>
+              <li><a href="about.html" class="hover:text-[rgba(32,32,32,0.68)]">ABOUT</a></li>
+              <li><a href="selected-stories.html" class="hover:text-[rgba(32,32,32,0.68)]">SELECTED STORIES</a></li>
+              <li><a href="film-and-multimedia.html" aria-current="page" class="text-[rgba(32,32,32,0.68)]">FILM &amp; MULTIMEDIA</a></li>
+              <li><a href="illustration-and-visual-storytelling.html" class="hover:text-[rgba(32,32,32,0.68)]">ILLUSTRATION &amp; VISUAL STORYTELLING</a></li>
+              <li><a href="awards.html" class="hover:text-[rgba(32,32,32,0.68)]">AWARDS &amp; FELLOWSHIPS</a></li>
+              <li><a href="conflict-and-crisis-reporting.html" class="hover:text-[rgba(32,32,32,0.68)]">CONFLICT &amp; CRISIS REPORTING</a></li>
+              <li><a href="travel-and-lifestyle.html" class="hover:text-[rgba(32,32,32,0.68)]">TRAVEL &amp; LIFESTYLE</a></li>
+              <li><a href="impact.html" class="hover:text-[rgba(32,32,32,0.68)]">IMPACT</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <section aria-label="Jigyasa Mishra portfolio" class="grid h-full w-full grid-cols-[140px_270px_minmax(0,1fr)] gap-x-0 gap-y-0 max-xl:grid-cols-[140px_200px_minmax(0,1fr)] max-lg:h-auto max-lg:grid-cols-1 max-lg:gap-7">
+        <aside class="min-w-0 max-lg:hidden">
+          <h1 class="mb-[22px] text-[clamp(24px,2.1vw,28px)] font-bold leading-[1.08] tracking-[-0.03em] whitespace-nowrap">
+            <a href="index.html" class="hover:text-[rgba(32,32,32,0.68)]">
+              Jigyasa Mishra
+            </a>
+          </h1>
+
+          <nav aria-label="Contact and profile links" class="mb-[26px] grid gap-0">
+            <a href="mailto:jigsindia40@gmail.com" class="inline-flex w-fit items-center gap-1.5 text-[10.8px] leading-[1.25] text-[rgba(32,32,32,0.82)] hover:text-ink">
+              <svg class="h-[11px] w-[11px] shrink-0" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path d="M1 2h10v8H1z" class="fill-none stroke-current" stroke-width="1" />
+                <path d="m1 2 5 4 5-4" class="fill-none stroke-current" stroke-width="1" />
+              </svg>
+              <span>Email</span>
+            </a>
+            <a href="https://www.instagram.com/TheJigyasaJournal" class="inline-flex w-fit items-center gap-1.5 text-[10.8px] leading-[1.25] text-[rgba(32,32,32,0.82)] hover:text-ink" aria-label="Instagram">
+              <svg class="h-[11px] w-[11px] shrink-0" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <rect x="1" y="1" width="10" height="10" rx="2.5" class="fill-none stroke-current" stroke-width="1" />
+                <circle cx="6" cy="6" r="2.25" class="fill-none stroke-current" stroke-width="1" />
+                <circle cx="8.95" cy="2.95" r="0.6" fill="currentColor" />
+              </svg>
+              <span>Instagram</span>
+            </a>
+            <a href="https://x.com/apkijigyasa?lang=en" class="inline-flex w-fit items-center gap-1.5 text-[10.8px] leading-[1.25] text-[rgba(32,32,32,0.82)] hover:text-ink" aria-label="Twitter">
+              <svg class="h-[11px] w-[11px] shrink-0" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path d="M2 1.7h2.2l2.1 3 2.6-3h1.2L6.8 5.5 10.3 10H8.1L5.8 6.8 3 10H1.8l3.5-4L2 1.7Zm1 .7 5.5 6.9h.8L3.8 2.4H3Z" fill="currentColor" />
+              </svg>
+              <span>Twitter</span>
+            </a>
+            <a href="press-and-panels.html" class="inline-flex w-fit items-center gap-1.5 text-[10.8px] leading-[1.25] text-[rgba(32,32,32,0.82)] hover:text-ink" aria-label="Press and panels">
+              <svg class="h-[11px] w-[11px] shrink-0" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <circle cx="6" cy="6" r="4.5" class="fill-none stroke-current" stroke-width="1" />
+                <path d="M5.8 3.6a.7.7 0 1 1 0 1.4.7.7 0 0 1 0-1.4ZM5.4 5.8h.8v2.8h-.8z" fill="currentColor" />
+              </svg>
+              <span>Press &amp; Panels</span>
+            </a>
+          </nav>
+
+          <nav aria-label="Portfolio sections">
+            <ul class="grid gap-[15px] text-[10px] font-medium leading-[1.2] text-ink">
+              <li><a href="about.html" class="hover:text-[rgba(32,32,32,0.68)]">ABOUT</a></li>
+              <li><a href="selected-stories.html" class="hover:text-[rgba(32,32,32,0.68)]">SELECTED STORIES</a></li>
+              <li><a href="film-and-multimedia.html" aria-current="page" class="text-[rgba(32,32,32,0.68)]">FILM &amp; MULTIMEDIA</a></li>
+              <li><a href="illustration-and-visual-storytelling.html" class="hover:text-[rgba(32,32,32,0.68)]">ILLUSTRATION &amp; VISUAL STORYTELLING</a></li>
+              <li><a href="awards.html" class="hover:text-[rgba(32,32,32,0.68)]">AWARDS &amp; FELLOWSHIPS</a></li>
+              <li><a href="conflict-and-crisis-reporting.html" class="hover:text-[rgba(32,32,32,0.68)]">CONFLICT &amp; CRISIS REPORTING</a></li>
+              <li><a href="travel-and-lifestyle.html" class="hover:text-[rgba(32,32,32,0.68)]">TRAVEL &amp; LIFESTYLE</a></li>
+              <li><a href="impact.html" class="hover:text-[rgba(32,32,32,0.68)]">IMPACT</a></li>
+            </ul>
+          </nav>
+        </aside>
+
+        <div aria-hidden="true" class="max-lg:hidden"></div>
+
+        <section aria-label="Film & Multimedia" class="no-scrollbar min-h-0 overflow-y-auto pb-16 pr-8 text-[#414040] max-lg:pr-0">
+          <div class="flex min-h-[60vh] w-full max-w-[1147px] flex-col justify-start">
+            <h2 class="mb-4 text-[clamp(24px,2.1vw,28px)] font-bold leading-[1.08] tracking-[-0.03em] text-[#202020] max-lg:mb-3">
+              Film &amp; Multimedia
+            </h2>
+            <p class="mb-8 text-[10.5px] font-semibold uppercase tracking-[0.12em] text-[rgba(32,32,32,0.48)]">
+              Coming Soon
+            </p>
+
+            <div class="max-w-[580px] border-l-2 border-ink/20 pl-5 text-[13px] leading-[1.75] text-[rgba(32,32,32,0.72)]">
+              <p>
+                This section is currently being curated with documentary films, video dispatches, and multimedia storytelling projects.
+              </p>
+              <p class="mt-4 text-[rgba(32,32,32,0.55)]">
+                Selected stories, documents, and multimedia will be available here soon. In the meantime, you can explore recent articles on the <a href="index.html" class="font-medium text-ink underline underline-offset-2 hover:text-[rgba(32,32,32,0.68)]">Home</a> page or browse published features under <a href="press-and-panels.html" class="font-medium text-ink underline underline-offset-2 hover:text-[rgba(32,32,32,0.68)]">Press &amp; Panels</a>.
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <footer class="absolute left-[14px] bottom-[13px] text-[12px] leading-[1.2] text-footer max-lg:static max-lg:mt-7">
+        &copy;2037 Copyrights Etc. &bull; <a href="mailto:jigsindia40@gmail.com" class="hover:underline hover:text-ink transition">Contact</a>
+      </footer>
+    </main>
+    <script>
+      function setMobileMenu(open) {
+        var menu = document.getElementById('mobile-menu');
+        if (menu) menu.classList.toggle('hidden', !open);
+        var mainSection = document.querySelector('main > section');
+        if (mainSection) mainSection.classList.toggle('hidden', open);
+        var header = document.querySelector('main > header');
+        if (header) header.classList.toggle('hidden', open);
+        var footer = document.querySelector('main > footer');
+        if (footer) footer.classList.toggle('hidden', open);
+        if (open) {
+          window.scrollTo({ top: 0, behavior: 'instant' });
+        }
+      }
+    </script>
+  </body>
+</html>
