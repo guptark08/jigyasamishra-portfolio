@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Press &amp; Panels | Jigyasa Mishra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script>
+      tailwind = window.tailwind || {}
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ink: '#202020',
+              paper: '#FEFFFF',
+              highlight: '#f1e754',
+              footer: '#c9c9c9',
+            },
+            fontFamily: {
+              sans: ['Montserrat', 'Helvetica Neue', 'Arial', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </head>
+  <body class="h-screen overflow-hidden bg-paper font-sans text-ink antialiased max-lg:h-auto max-lg:overflow-auto">
+    <main class="relative h-screen w-full overflow-hidden px-5 py-[27px] sm:px-8 lg:px-10 max-lg:h-auto max-lg:min-h-screen max-lg:overflow-visible max-lg:px-2 max-lg:py-2">
+      <header class="mb-6 hidden max-lg:block">
+        <div class="flex items-center justify-between text-[10px] leading-none text-ink">
+          <a href="index.html" class="font-medium hover:text-[rgba(32,32,32,0.68)]">Jigyasa Mishra</a>
+          <button type="button" class="hover:text-[rgba(32,32,32,0.68)]" onclick="setMobileMenu(true)">Menu</button>
+        </div>
+        <div class="mt-3 border-t border-ink"></div>
+      </header>
+
+      <div id="mobile-menu" class="fixed inset-0 z-[100] hidden h-full min-h-screen w-full overflow-y-auto bg-white px-6 py-6 text-ink shadow-2xl" style="background-color: #FEFFFF !important;">
+        <div class="flex items-center justify-between border-b border-ink/15 pb-4">
+          <span class="text-sm font-bold tracking-tight text-ink">Jigyasa Mishra</span>
+          <button type="button" class="rounded border border-ink/20 px-3 py-1 text-xs font-medium text-ink transition hover:bg-ink hover:text-paper" onclick="setMobileMenu(false)">Close</button>
+        </div>
+        <div class="mt-6">
+          <nav aria-label="Mobile contact links" class="mb-7 grid gap-2.5 text-xs text-ink/85">
+            <a href="mailto:jigsindia40@gmail.com" class="inline-flex w-fit items-center gap-2 hover:text-ink">
+              <svg class="h-3.5 w-3.5 shrink-0" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path d="M1 2h10v8H1z" class="fill-none stroke-current" stroke-width="1" />
+                <path d="m1 2 5 4 5-4" class="fill-none stroke-current" stroke-width="1" />
+              </svg>
+              <span>Email</span>
+            </a>
+            <a href="https://www.instagram.com/TheJigyasaJournal" class="inline-flex w-fit items-center gap-2 hover:text-ink">
+              <svg class="h-3.5 w-3.5 shrink-0" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <rect x="1" y="1" width="10" height="10" rx="2.5" class="fill-none stroke-current" stroke-width="1" />
+                <circle cx="6" cy="6" r="2.25" class="fill-none stroke-current" stroke-width="1" />
+                <circle cx="8.95" cy="2.95" r="0.6" fill="currentColor" />
+              </svg>
+              <span>Instagram</span>
+            </a>
+            <a href="https://x.com/apkijigyasa?lang=en" class="inline-flex w-fit items-center gap-2 hover:text-ink" aria-label="Twitter">
+              <svg class="h-3.5 w-3.5 shrink-0" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path d="M2 1.7h2.2l2.1 3 2.6-3h1.2L6.8 5.5 10.3 10H8.1L5.8 6.8 3 10H1.8l3.5-4L2 1.7Zm1 .7 5.5 6.9h.8L3.8 2.4H3Z" fill="currentColor" />
+              </svg>
+              <span>Twitter</span>
+            </a>
+            <a href="press-and-panels.html" class="inline-flex w-fit items-center gap-2 font-medium hover:text-ink" aria-current="page">
+              <svg class="h-3.5 w-3.5 shrink-0" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <circle cx="6" cy="6" r="4.5" class="fill-none stroke-current" stroke-width="1" />
+                <path d="M5.8 3.6a.7.7 0 1 1 0 1.4.7.7 0 0 1 0-1.4ZM5.4 5.8h.8v2.8h-.8z" fill="currentColor" />
+              </svg>
+              <span>Press &amp; Panels</span>
+            </a>
+          </nav>
+
+          <div class="mb-6 border-t border-ink/10"></div>
+
+          <nav aria-label="Mobile portfolio sections">
+            <ul class="grid gap-4 text-xs font-semibold tracking-wider text-ink">
+              <li><a href="index.html" class="hover:text-[rgba(32,32,32,0.68)]">HOME</a></li>
+              <li><a href="about.html" class="hover:text-[rgba(32,32,32,0.68)]">ABOUT</a></li>
+              <li><a href="awards.html" class="hover:text-[rgba(32,32,32,0.68)]">AWARDS</a></li>
+              <li><a href="#" class="hover:text-[rgba(32,32,32,0.68)]">JOURNALISM</a></li>
+              <li><a href="#" class="hover:text-[rgba(32,32,32,0.68)]">AUDIO-VISUALS</a></li>
+              <li><a href="#" class="hover:text-[rgba(32,32,32,0.68)]">ILLUSTRATIONS</a></li>
+              <li><a href="#" class="hover:text-[rgba(32,32,32,0.68)]">DESIGNS</a></li>
+              <li><a href="#" class="hover:text-[rgba(32,32,32,0.68)]">SPECIAL PROJECTS</a></li>
+              <li><a href="#" class="hover:text-[rgba(32,32,32,0.68)]">IMPACT</a></li>
+              <li><a href="#" class="hover:text-[rgba(32,32,32,0.68)]">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <section aria-label="Jigyasa Mishra portfolio" class="grid h-full w-full grid-cols-[140px_270px_minmax(0,1fr)] gap-x-0 gap-y-0 max-xl:grid-cols-[140px_200px_minmax(0,1fr)] max-lg:h-auto max-lg:grid-cols-1 max-lg:gap-7">
+        <aside class="min-w-0 max-lg:hidden">
+          <h1 class="mb-[22px] text-[clamp(24px,2.1vw,28px)] font-bold leading-[1.08] tracking-[-0.03em] whitespace-nowrap">
+            <a href="index.html" class="hover:text-[rgba(32,32,32,0.68)]">
+              Jigyasa Mishra
+            </a>
+          </h1>
+
+          <nav aria-label="Contact and profile links" class="mb-[26px] grid gap-0">
+            <a href="mailto:jigsindia40@gmail.com" class="inline-flex w-fit items-center gap-1.5 text-[10.8px] leading-[1.25] text-[rgba(32,32,32,0.82)] hover:text-ink">
+              <svg class="h-[11px] w-[11px] shrink-0" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path d="M1 2h10v8H1z" class="fill-none stroke-current" stroke-width="1" />
+                <path d="m1 2 5 4 5-4" class="fill-none stroke-current" stroke-width="1" />
+              </svg>
+              <span>Email</span>
+            </a>
+            <a href="https://www.instagram.com/TheJigyasaJournal" class="inline-flex w-fit items-center gap-1.5 text-[10.8px] leading-[1.25] text-[rgba(32,32,32,0.82)] hover:text-ink" aria-label="Instagram">
+              <svg class="h-[11px] w-[11px] shrink-0" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <rect x="1" y="1" width="10" height="10" rx="2.5" class="fill-none stroke-current" stroke-width="1" />
+                <circle cx="6" cy="6" r="2.25" class="fill-none stroke-current" stroke-width="1" />
+                <circle cx="8.95" cy="2.95" r="0.6" fill="currentColor" />
+              </svg>
+              <span>Instagram</span>
+            </a>
+            <a href="https://x.com/apkijigyasa?lang=en" class="inline-flex w-fit items-center gap-1.5 text-[10.8px] leading-[1.25] text-[rgba(32,32,32,0.82)] hover:text-ink" aria-label="Twitter">
+              <svg class="h-[11px] w-[11px] shrink-0" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path d="M2 1.7h2.2l2.1 3 2.6-3h1.2L6.8 5.5 10.3 10H8.1L5.8 6.8 3 10H1.8l3.5-4L2 1.7Zm1 .7 5.5 6.9h.8L3.8 2.4H3Z" fill="currentColor" />
+              </svg>
+              <span>Twitter</span>
+            </a>
+            <a href="press-and-panels.html" class="inline-flex w-fit items-center gap-1.5 text-[10.8px] leading-[1.25] text-[rgba(32,32,32,0.82)] hover:text-ink" aria-label="Press and panels" aria-current="page">
+              <svg class="h-[11px] w-[11px] shrink-0" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <circle cx="6" cy="6" r="4.5" class="fill-none stroke-current" stroke-width="1" />
+                <path d="M5.8 3.6a.7.7 0 1 1 0 1.4.7.7 0 0 1 0-1.4ZM5.4 5.8h.8v2.8h-.8z" fill="currentColor" />
+              </svg>
+              <span>Press &amp; Panels</span>
+            </a>
+          </nav>
+
+          <nav aria-label="Portfolio sections">
+            <ul class="grid gap-[15px] text-[10px] font-medium leading-[1.2] text-ink">
+              <li><a href="about.html" class="hover:text-[rgba(32,32,32,0.68)]">ABOUT</a></li>
+              <li><a href="awards.html" class="hover:text-[rgba(32,32,32,0.68)]">AWARDS</a></li>
+              <li><a href="#" class="hover:text-[rgba(32,32,32,0.68)]">JOURNALISM</a></li>
+              <li><a href="#" class="hover:text-[rgba(32,32,32,0.68)]">AUDIO-VISUALS</a></li>
+              <li><a href="#" class="hover:text-[rgba(32,32,32,0.68)]">ILLUSTRATIONS</a></li>
+              <li><a href="#" class="hover:text-[rgba(32,32,32,0.68)]">DESIGNS</a></li>
+              <li><a href="#" class="hover:text-[rgba(32,32,32,0.68)]">SPECIAL PROJECTS</a></li>
+              <li><a href="#" class="hover:text-[rgba(32,32,32,0.68)]">IMPACT</a></li>
+              <li><a href="#" class="hover:text-[rgba(32,32,32,0.68)]">CONTACT</a></li>
+            </ul>
+          </nav>
+        </aside>
+
+        <div aria-hidden="true" class="max-lg:hidden"></div>
+
+        <section aria-label="Press and panels" class="no-scrollbar min-h-0 overflow-y-auto pb-16 pr-8 text-[#414040] max-lg:pr-0">
+          <div class="w-full max-w-[1147px]">
+            <h2 class="mb-[62px] text-[clamp(18px,1.55vw,22px)] font-bold leading-[1.08] tracking-[-0.03em] text-[#202020] max-lg:mb-8">
+              Press &amp; Panels
+            </h2>
+
+            <div id="articles-list" class="grid gap-[70px] max-lg:gap-10">
+              <article>
+                <a href="https://www.aljazeera.com/video/newsfeed/2026/10/4/we-need-freedom-new-delhi-women-protest-sexual-violence" aria-label="‘We need freedom’: New Delhi women protest sexual violence" class="block aspect-[1147/606] w-full overflow-hidden bg-[#d9d9d9]">
+                  <img src="assets/press/aljazeera-women-protest-delhi.jpg" alt="Women in New Delhi protest sexual violence and call for systemic safety reforms" class="h-full w-full object-cover object-center" />
+                </a>
+                <div class="mt-8 flex items-start justify-between gap-8 max-sm:mt-4 max-sm:gap-4">
+                  <div class="max-w-[680px]">
+                    <h3 class="text-[clamp(16px,1.25vw,22px)] font-normal leading-[1.18] tracking-[-0.01em] text-[#414040] max-sm:text-[15px]">
+                      <a href="https://www.aljazeera.com/video/newsfeed/2026/10/4/we-need-freedom-new-delhi-women-protest-sexual-violence" class="hover:text-[rgba(32,32,32,0.68)]">&lsquo;We need freedom&rsquo;: New Delhi women protest sexual violence</a>
+                    </h3>
+                    <p class="mt-2 text-[11px] font-medium uppercase leading-[1.35] tracking-[0.02em] text-[rgba(32,32,32,0.55)]">4 October 2026</p>
+                    <p class="mt-2 max-w-[610px] text-[13px] leading-[1.55] text-[rgba(32,32,32,0.62)]">
+                      Protests erupt in New Delhi calling for women&rsquo;s safety, justice, and systemic accountability following the alleged gang rape of a teenager.
+                    </p>
+                  </div>
+                  <img src="logos/Al_jazeera_BW.webp" alt="Al Jazeera" class="mt-0 h-auto w-[120px] shrink-0 object-contain max-sm:w-[85px]" />
+                </div>
+              </article>
+
+              <article>
+                <a href="https://www.theguardian.com/global-development/2026/sep/30/mothers-trauma-women-children-nepal-flash-floods" aria-label="‘I do not know if the doctor survived’: young mothers recall ‘living hell’ of Nepal’s floods" class="block aspect-[1147/606] w-full overflow-hidden bg-[#d9d9d9]">
+                  <img src="blog-post-images/nepal-floods-mothers.jpg" alt="‘I do not know if the doctor survived’: young mothers recall ‘living hell’ of Nepal’s floods" class="h-full w-full object-cover object-center" />
+                </a>
+                <div class="mt-8 flex items-start justify-between gap-8 max-sm:mt-4 max-sm:gap-4">
+                  <div class="max-w-[680px]">
+                    <h3 class="text-[clamp(16px,1.25vw,22px)] font-normal leading-[1.18] tracking-[-0.01em] text-[#414040] max-sm:text-[15px]">
+                      <a href="https://www.theguardian.com/global-development/2026/sep/30/mothers-trauma-women-children-nepal-flash-floods" class="hover:text-[rgba(32,32,32,0.68)]">&lsquo;I do not know if the doctor survived&rsquo;: young mothers recall &lsquo;living hell&rsquo; of Nepal&rsquo;s floods</a>
+                    </h3>
+                    <p class="mt-2 text-[11px] font-medium uppercase leading-[1.35] tracking-[0.02em] text-[rgba(32,32,32,0.55)]">30 September 2026</p>
+                    <p class="mt-2 max-w-[610px] text-[13px] leading-[1.55] text-[rgba(32,32,32,0.62)]">
+                      Kalpana Nepali was seven months pregnant when the flash floods hit, while Pooja Pariyal spent three days on a hospital roof waiting to be rescued. Now, they are living precariously in temporary shelters.
+                    </p>
+                  </div>
+                  <img src="logos/The_Guardian_2018.svg" alt="The Guardian" class="mt-0 h-auto w-[120px] shrink-0 object-contain max-sm:w-[85px]" />
+                </div>
+              </article>
+
+              <article>
+                <a href="https://www.aljazeera.com/news/2026/9/28/still-a-lockdown-deadly-floods-hit-nepal-tourism-as-peak-season-begins" aria-label="‘Still a lockdown’: Deadly floods hit Nepal tourism as peak season begins" class="block aspect-[1147/606] w-full overflow-hidden bg-[#d9d9d9]">
+                  <img src="assets/press/aljazeera-nepal-tourism-floods.jpg" alt="Nepal tourism hit by deadly floods" class="h-full w-full object-cover object-center" />
+                </a>
+                <div class="mt-8 flex items-start justify-between gap-8 max-sm:mt-4 max-sm:gap-4">
+                  <div class="max-w-[680px]">
+                    <h3 class="text-[clamp(16px,1.25vw,22px)] font-normal leading-[1.18] tracking-[-0.01em] text-[#414040] max-sm:text-[15px]">
+                      <a href="https://www.aljazeera.com/news/2026/9/28/still-a-lockdown-deadly-floods-hit-nepal-tourism-as-peak-season-begins" class="hover:text-[rgba(32,32,32,0.68)]">&lsquo;Still a lockdown&rsquo;: Deadly floods hit Nepal tourism as peak season begins</a>
+                    </h3>
+                    <p class="mt-2 text-[11px] font-medium uppercase leading-[1.35] tracking-[0.02em] text-[rgba(32,32,32,0.55)]">28 September 2026</p>
+                    <p class="mt-2 max-w-[610px] text-[13px] leading-[1.55] text-[rgba(32,32,32,0.62)]">
+                      As Nepal recovers from devastating floods and blocked highways, over a million people dependent on peak-season tourism struggle to survive.
+                    </p>
+                  </div>
+                  <img src="logos/Al_jazeera_BW.webp" alt="Al Jazeera" class="mt-0 h-auto w-[120px] shrink-0 object-contain max-sm:w-[85px]" />
+                </div>
+              </article>
+
+              <article>
+                <a href="https://www.aljazeera.com/news/2026/9/22/orphaned-by-floods-more-than-500-nepali-children-face-uncertain-future" aria-label="‘Orphaned’ by floods, more than 500 Nepali children face uncertain future" class="block aspect-[1147/606] w-full overflow-hidden bg-[#d9d9d9]">
+                  <img src="assets/press/aljazeera-orphaned-by-floods.jpg" alt="Nepali children displaced by floods in temporary shelters" class="h-full w-full object-cover object-center" />
+                </a>
+                <div class="mt-8 flex items-start justify-between gap-8 max-sm:mt-4 max-sm:gap-4">
+                  <div class="max-w-[680px]">
+                    <h3 class="text-[clamp(16px,1.25vw,22px)] font-normal leading-[1.18] tracking-[-0.01em] text-[#414040] max-sm:text-[15px]">
+                      <a href="https://www.aljazeera.com/news/2026/9/22/orphaned-by-floods-more-than-500-nepali-children-face-uncertain-future" class="hover:text-[rgba(32,32,32,0.68)]">&lsquo;Orphaned&rsquo; by floods, more than 500 Nepali children face uncertain future</a>
+                    </h3>
+                    <p class="mt-2 text-[11px] font-medium uppercase leading-[1.35] tracking-[0.02em] text-[rgba(32,32,32,0.55)]">22 September 2026</p>
+                    <p class="mt-2 max-w-[610px] text-[13px] leading-[1.55] text-[rgba(32,32,32,0.62)]">
+                      More than 500 children are left in temporary shelters with their parents missing or declared dead following catastrophic floods across Nepal.
+                    </p>
+                  </div>
+                  <img src="logos/Al_jazeera_BW.webp" alt="Al Jazeera" class="mt-0 h-auto w-[120px] shrink-0 object-contain max-sm:w-[85px]" />
+                </div>
+              </article>
+
+              <article>
+                <a href="https://ruralindiaonline.org/search?q=jigyasa&locale=hi" aria-label="पारि (PARI) पर ग्राउंड रिपोर्ट और लेख: ग्रामीण भारत की पड़ताल" class="block aspect-[1147/606] w-full overflow-hidden bg-[#d9d9d9]">
+                  <img src="assets/press/pari-funeral-pyres-varanasi.jpg" alt="पारि (PARI) पर ग्राउंड रिपोर्ट और दस्तावेजी कहानियां" class="h-full w-full object-cover object-center" />
+                </a>
+                <div class="mt-8 flex items-start justify-between gap-8 max-sm:mt-4 max-sm:gap-4">
+                  <div class="max-w-[680px]">
+                    <h3 class="text-[clamp(16px,1.25vw,22px)] font-normal leading-[1.18] tracking-[-0.01em] text-[#414040] max-sm:text-[15px]">
+                      <a href="https://ruralindiaonline.org/search?q=jigyasa&locale=hi" class="hover:text-[rgba(32,32,32,0.68)]">पारि (PARI) पर ग्राउंड रिपोर्ट और लेख: ग्रामीण भारत की पड़ताल</a>
+                    </h3>
+                    <p class="mt-2 text-[11px] font-medium uppercase leading-[1.35] tracking-[0.02em] text-[rgba(32,32,32,0.55)]">PARI Hindi Archive</p>
+                    <p class="mt-2 max-w-[610px] text-[13px] leading-[1.55] text-[rgba(32,32,32,0.62)]">
+                      पीपुल्स आर्काइव ऑफ़ रूरल इंडिया (PARI) पर महिलाओं के स्वास्थ्य, ग्रामीण आजीविका, श्रम, पर्यावरण और हाशिए के समुदायों पर आधारित ग्राउंड रिपोर्टिंग और सचित्र कहानियों का पूरा संग्रह।
+                    </p>
+                  </div>
+                  <img src="logos/Pari_BW.webp" alt="People's Archive of Rural India" class="mt-0 h-auto w-[130px] shrink-0 object-contain max-sm:w-[92px]" />
+                </div>
+              </article>
+
+              <article>
+                <a href="https://www.vogue.in/content/a-village-in-bihar-refuses-to-let-one-of-indias-oldest-art-forms-die" aria-label="A village in Bihar refuses to let one of India's oldest art forms die" class="block aspect-[1147/606] w-full overflow-hidden bg-[#d9d9d9]">
+                  <img src="assets/press/vogue-art-village.webp" alt="Madhubani art village in Bihar" class="h-full w-full object-cover object-center" />
+                </a>
+                <div class="mt-8 flex items-start justify-between gap-8 max-sm:mt-4 max-sm:gap-4">
+                  <div class="max-w-[680px]">
+                    <h3 class="text-[clamp(16px,1.25vw,22px)] font-normal leading-[1.18] tracking-[-0.01em] text-[#414040] max-sm:text-[15px]">
+                      <a href="https://www.vogue.in/content/a-village-in-bihar-refuses-to-let-one-of-indias-oldest-art-forms-die" class="hover:text-[rgba(32,32,32,0.68)]">A village in Bihar refuses to let one of India&rsquo;s oldest art forms die</a>
+                    </h3>
+                    <p class="mt-2 text-[11px] font-medium uppercase leading-[1.35] tracking-[0.02em] text-[rgba(32,32,32,0.55)]">21 February 2026</p>
+                    <p class="mt-2 max-w-[610px] text-[13px] leading-[1.55] text-[rgba(32,32,32,0.62)]">
+                      With many youngsters having migrated for work, it has fallen to the middle-aged and elderly to keep Jitwarpur and its Madhubani heritage going.
+                    </p>
+                  </div>
+                  <img src="logos/Vogue Logo.svg" alt="Vogue India" class="mt-0 h-auto w-[110px] shrink-0 object-contain max-sm:w-[76px]" />
+                </div>
+              </article>
+
+              <article>
+                <a href="https://www.cntraveller.in/story/in-khurja-an-age-old-ceramic-craft-adapts-for-the-modern-table/" aria-label="In Khurja, an age-old ceramic craft adapts for the modern table" class="block aspect-[1147/606] w-full overflow-hidden bg-[#d9d9d9]">
+                  <img src="assets/press/khurja-ceramic-craft.webp" alt="Handcrafted ceramics in Khurja" class="h-full w-full object-cover object-center" />
+                </a>
+                <div class="mt-8 flex items-start justify-between gap-8 max-sm:mt-4 max-sm:gap-4">
+                  <div class="max-w-[680px]">
+                    <h3 class="text-[clamp(16px,1.25vw,22px)] font-normal leading-[1.18] tracking-[-0.01em] text-[#414040] max-sm:text-[15px]">
+                      <a href="https://www.cntraveller.in/story/in-khurja-an-age-old-ceramic-craft-adapts-for-the-modern-table/" class="hover:text-[rgba(32,32,32,0.68)]">In Khurja, an age-old ceramic craft adapts for the modern table</a>
+                    </h3>
+                    <p class="mt-2 text-[11px] font-medium uppercase leading-[1.35] tracking-[0.02em] text-[rgba(32,32,32,0.55)]">28 March 2026</p>
+                    <p class="mt-2 max-w-[610px] text-[13px] leading-[1.55] text-[rgba(32,32,32,0.62)]">
+                      As India&rsquo;s top hotels and restaurants source pottery and serveware from Khurja, the legacy craft is keeping up with the times.
+                    </p>
+                  </div>
+                  <img src="logos/logo-cnt-india-reverse.svg" alt="Condé Nast Traveller India" class="mt-0 h-auto w-[110px] shrink-0 object-contain max-sm:w-[76px]" />
+                </div>
+              </article>
+
+              <article>
+                <a href="https://ruralindiaonline.org/article/footprints-of-protest-in-the-sands-of-a-mine" aria-label="Footprints of protest in the sands of a mine" class="block aspect-[1147/606] w-full overflow-hidden bg-[#d9d9d9]">
+                  <img src="assets/press/footprints-of-protest.webp" alt="Farmers protesting sand mining in Banda" class="h-full w-full object-cover object-center" />
+                </a>
+                <div class="mt-8 flex items-start justify-between gap-8 max-sm:mt-4 max-sm:gap-4">
+                  <div class="max-w-[680px]">
+                    <h3 class="text-[clamp(16px,1.25vw,22px)] font-normal leading-[1.18] tracking-[-0.01em] text-[#414040] max-sm:text-[15px]">
+                      <a href="https://ruralindiaonline.org/article/footprints-of-protest-in-the-sands-of-a-mine" class="hover:text-[rgba(32,32,32,0.68)]">Footprints of protest in the sands of a mine</a>
+                    </h3>
+                    <p class="mt-2 text-[11px] font-medium uppercase leading-[1.35] tracking-[0.02em] text-[rgba(32,32,32,0.55)]">6 June 2020</p>
+                    <p class="mt-2 max-w-[610px] text-[13px] leading-[1.55] text-[rgba(32,32,32,0.62)]">
+                      Farmers in Banda, Uttar Pradesh fight damage to their lands and the Ken river by a sand mining mafia.
+                    </p>
+                  </div>
+                  <img src="logos/Pari_BW.webp" alt="People's Archive of Rural India" class="mt-0 h-auto w-[130px] shrink-0 object-contain max-sm:w-[92px]" />
+                </div>
+              </article>
+
+              <article>
+                <a href="https://ruralindiaonline.org/article/locked-down-schoolgirls-no-basic-needs-period" aria-label="Locked-down schoolgirls: no basic needs, period" class="block aspect-[1147/606] w-full overflow-hidden bg-[#d9d9d9]">
+                  <img src="assets/press/locked-down-schoolgirls.webp" alt="Schoolgirls affected by lockdown period poverty" class="h-full w-full object-cover object-center" />
+                </a>
+                <div class="mt-8 flex items-start justify-between gap-8 max-sm:mt-4 max-sm:gap-4">
+                  <div class="max-w-[680px]">
+                    <h3 class="text-[clamp(16px,1.25vw,22px)] font-normal leading-[1.18] tracking-[-0.01em] text-[#414040] max-sm:text-[15px]">
+                      <a href="https://ruralindiaonline.org/article/locked-down-schoolgirls-no-basic-needs-period" class="hover:text-[rgba(32,32,32,0.68)]">Locked-down schoolgirls: no basic needs, period</a>
+                    </h3>
+                    <p class="mt-2 text-[11px] font-medium uppercase leading-[1.35] tracking-[0.02em] text-[rgba(32,32,32,0.55)]">12 May 2020</p>
+                    <p class="mt-2 max-w-[610px] text-[13px] leading-[1.55] text-[rgba(32,32,32,0.62)]">
+                      With schools shut, girls from poor families in Uttar Pradesh lost access to free sanitary napkins and turned to risky options.
+                    </p>
+                  </div>
+                  <img src="logos/Pari_BW.webp" alt="People's Archive of Rural India" class="mt-0 h-auto w-[130px] shrink-0 object-contain max-sm:w-[92px]" />
+                </div>
+              </article>
+
+              <article>
+                <a href="https://ruralindiaonline.org/article/up-panchayats-for-whom-the-polls-toll" aria-label="UP panchayats: for whom the polls toll" class="block aspect-[1147/606] w-full overflow-hidden bg-[#d9d9d9]">
+                  <img src="assets/press/up-panchayats-polls-toll.webp" alt="Uttar Pradesh panchayat election polling scene" class="h-full w-full object-cover object-center" />
+                </a>
+                <div class="mt-8 flex items-start justify-between gap-8 max-sm:mt-4 max-sm:gap-4">
+                  <div class="max-w-[680px]">
+                    <h3 class="text-[clamp(16px,1.25vw,22px)] font-normal leading-[1.18] tracking-[-0.01em] text-[#414040] max-sm:text-[15px]">
+                      <a href="https://ruralindiaonline.org/article/up-panchayats-for-whom-the-polls-toll" class="hover:text-[rgba(32,32,32,0.68)]">UP panchayats: for whom the polls toll</a>
+                    </h3>
+                    <p class="mt-2 text-[11px] font-medium uppercase leading-[1.35] tracking-[0.02em] text-[rgba(32,32,32,0.55)]">10 May 2021</p>
+                    <p class="mt-2 max-w-[610px] text-[13px] leading-[1.55] text-[rgba(32,32,32,0.62)]">
+                      Schoolteachers working as polling officials in the Uttar Pradesh panchayat elections died of Covid-19 as cases surged around the polls.
+                    </p>
+                  </div>
+                  <img src="logos/Pari_BW.webp" alt="People's Archive of Rural India" class="mt-0 h-auto w-[130px] shrink-0 object-contain max-sm:w-[92px]" />
+                </div>
+              </article>
+
+              <article>
+                <a href="https://ruralindiaonline.org/article/in-the-dark-health-care-in-wazirithal" aria-label="In the dark: health care in Wazirithal" class="block aspect-[1147/606] w-full overflow-hidden bg-[#d9d9d9]">
+                  <img src="assets/press/wazirithal-health-care.webp" alt="Health care in Wazirithal village" class="h-full w-full object-cover object-center" />
+                </a>
+                <div class="mt-8 flex items-start justify-between gap-8 max-sm:mt-4 max-sm:gap-4">
+                  <div class="max-w-[680px]">
+                    <h3 class="text-[clamp(16px,1.25vw,22px)] font-normal leading-[1.18] tracking-[-0.01em] text-[#414040] max-sm:text-[15px]">
+                      <a href="https://ruralindiaonline.org/article/in-the-dark-health-care-in-wazirithal" class="hover:text-[rgba(32,32,32,0.68)]">In the dark: health care in Wazirithal</a>
+                    </h3>
+                    <p class="mt-2 text-[11px] font-medium uppercase leading-[1.35] tracking-[0.02em] text-[rgba(32,32,32,0.55)]">17 November 2022</p>
+                    <p class="mt-2 max-w-[610px] text-[13px] leading-[1.55] text-[rgba(32,32,32,0.62)]">
+                      Pregnant women in Bandipore struggle with erratic power supply and poor public healthcare facilities.
+                    </p>
+                  </div>
+                  <img src="logos/Pari_BW.webp" alt="People's Archive of Rural India" class="mt-0 h-auto w-[130px] shrink-0 object-contain max-sm:w-[92px]" />
+                </div>
+              </article>
+
+              <article>
+                <a href="https://article-14.com/post/raped-mocked-by-police-for-seeking-justice-india-s-rape-laws-do-not-cover-transwomen--62c65919a04a3" aria-label="Raped, Mocked By Police For Seeking Justice: India's Rape Laws Do Not Cover Transwomen" class="block aspect-[1147/606] w-full overflow-hidden bg-[#d9d9d9]">
+                  <img src="assets/press/article14-transwomen.webp" alt="Illustration of a transwoman for Article 14" class="h-full w-full object-cover object-center" />
+                </a>
+                <div class="mt-8 flex items-start justify-between gap-8 max-sm:mt-4 max-sm:gap-4">
+                  <div class="max-w-[680px]">
+                    <h3 class="text-[clamp(16px,1.25vw,22px)] font-normal leading-[1.18] tracking-[-0.01em] text-[#414040] max-sm:text-[15px]">
+                      <a href="https://article-14.com/post/raped-mocked-by-police-for-seeking-justice-india-s-rape-laws-do-not-cover-transwomen--62c65919a04a3" class="hover:text-[rgba(32,32,32,0.68)]">Raped, mocked by police for seeking justice: India&rsquo;s rape laws do not cover transwomen</a>
+                    </h3>
+                    <p class="mt-2 text-[11px] font-medium uppercase leading-[1.35] tracking-[0.02em] text-[rgba(32,32,32,0.55)]">7 July 2022</p>
+                    <p class="mt-2 max-w-[610px] text-[13px] leading-[1.55] text-[rgba(32,32,32,0.62)]">
+                      A report on how gaps in India&rsquo;s rape laws leave transwomen vulnerable to sexual violence and poor access to justice.
+                    </p>
+                  </div>
+                  <img src="logos/article 14 logo.svg" alt="Article 14" class="mt-0 h-auto w-[118px] shrink-0 object-contain max-sm:w-[84px]" />
+                </div>
+              </article>
+
+              <article>
+                <a href="https://behanbox.com/2022/02/16/we-live-work-in-filth-and-are-treated-like-filth-punjabs-dalit-women-caught-in-cycle-of-bonded-work/" aria-label="Punjab's Dalit women caught in cycle of bonded work" class="block aspect-[1147/606] w-full overflow-hidden bg-[#d9d9d9]">
+                  <img src="assets/press/behanbox-dalit-women-bonded-work.webp" alt="Dalit women workers in Punjab" class="h-full w-full object-cover object-center" />
+                </a>
+                <div class="mt-8 flex items-start justify-between gap-8 max-sm:mt-4 max-sm:gap-4">
+                  <div class="max-w-[680px]">
+                    <h3 class="text-[clamp(16px,1.25vw,22px)] font-normal leading-[1.18] tracking-[-0.01em] text-[#414040] max-sm:text-[15px]">
+                      <a href="https://behanbox.com/2022/02/16/we-live-work-in-filth-and-are-treated-like-filth-punjabs-dalit-women-caught-in-cycle-of-bonded-work/" class="hover:text-[rgba(32,32,32,0.68)]">&lsquo;We live, work in filth and are treated like filth:&rsquo; Punjab&rsquo;s Dalit women caught in cycle of bonded work</a>
+                    </h3>
+                    <p class="mt-2 text-[11px] font-medium uppercase leading-[1.35] tracking-[0.02em] text-[rgba(32,32,32,0.55)]">16 February 2022</p>
+                    <p class="mt-2 max-w-[610px] text-[13px] leading-[1.55] text-[rgba(32,32,32,0.62)]">
+                      A story on Dalit Sikh women in Punjab working in punishing conditions and trapped in cycles of caste, labour, and debt.
+                    </p>
+                  </div>
+                  <img src="logos/behanbox logo.svg" alt="BehanBox" class="mt-0 h-auto w-[118px] shrink-0 object-contain max-sm:w-[84px]" />
+                </div>
+              </article>
+
+              <article>
+                <a href="https://dialogue.earth/en/water/womens-lives-get-harder-in-bundelkhand-as-water-scarcity-grows/" aria-label="Women's lives get harder in Bundelkhand as water scarcity grows" class="block aspect-[1147/606] w-full overflow-hidden bg-[#d9d9d9]">
+                  <img src="blog-post-images/20220707_Kamlawati-goes-to-deliver-milk-with-her-husband-1024x751.webp" alt="Kamlawati goes to deliver milk with her husband in Bundelkhand" class="h-full w-full object-cover object-center" />
+                </a>
+                <div class="mt-8 flex items-start justify-between gap-8 max-sm:mt-4 max-sm:gap-4">
+                  <div class="max-w-[680px]">
+                    <h3 class="text-[clamp(16px,1.25vw,22px)] font-normal leading-[1.18] tracking-[-0.01em] text-[#414040] max-sm:text-[15px]">
+                      <a href="https://dialogue.earth/en/water/womens-lives-get-harder-in-bundelkhand-as-water-scarcity-grows/" class="hover:text-[rgba(32,32,32,0.68)]">Women&rsquo;s lives get harder in Bundelkhand as water scarcity grows</a>
+                    </h3>
+                    <p class="mt-2 text-[11px] font-medium uppercase leading-[1.35] tracking-[0.02em] text-[rgba(32,32,32,0.55)]">8 July 2022</p>
+                    <p class="mt-2 max-w-[610px] text-[13px] leading-[1.55] text-[rgba(32,32,32,0.62)]">
+                      Up to 70% of women in parts of drought-prone Bundelkhand are affected by acute water shortages, according to one NGO estimate.
+                    </p>
+                  </div>
+                  <img src="logos/Dialogue-Earth-Logo-1.svg" alt="Dialogue Earth" class="mt-0 h-auto w-[118px] shrink-0 object-contain max-sm:w-[84px]" />
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <footer class="absolute left-[14px] bottom-[13px] text-[12px] leading-[1.2] text-footer max-lg:static max-lg:mt-7">
+        &copy;2037 Copyrights Etc.
+      </footer>
+    </main>
+    <script>
+      function setMobileMenu(open) {
+        var menu = document.getElementById('mobile-menu');
+        if (menu) menu.classList.toggle('hidden', !open);
+        var mainSection = document.querySelector('main > section');
+        if (mainSection) mainSection.classList.toggle('hidden', open);
+        var header = document.querySelector('main > header');
+        if (header) header.classList.toggle('hidden', open);
+        var footer = document.querySelector('main > footer');
+        if (footer) footer.classList.toggle('hidden', open);
+        if (open) {
+          window.scrollTo({ top: 0, behavior: 'instant' });
+        }
+      }
+
+      // Netlify Identity login redirect
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on('init', function(user) {
+          if (!user) {
+            window.netlifyIdentity.on('login', function() {
+              document.location.href = '/admin/';
+            });
+          }
+        });
+      }
+
+      // Load dynamic articles from CMS
+      fetch('data/press_articles.json')
+        .then(function(res) { return res.ok ? res.json() : null; })
+        .then(function(data) {
+          if (!data || !Array.isArray(data.articles) || data.articles.length === 0) return;
+          var container = document.getElementById('articles-list');
+          if (!container) return;
+
+          function getLogoWidth(logo) {
+            if (!logo) return 'w-[120px] max-sm:w-[85px]';
+            if (logo.indexOf('Pari_BW') !== -1) return 'w-[130px] max-sm:w-[92px]';
+            if (logo.indexOf('Vogue') !== -1 || logo.indexOf('cnt-india') !== -1) return 'w-[110px] max-sm:w-[76px]';
+            if (logo.indexOf('article 14') !== -1 || logo.indexOf('behanbox') !== -1 || logo.indexOf('Dialogue-Earth') !== -1) return 'w-[118px] max-sm:w-[84px]';
+            return 'w-[120px] max-sm:w-[85px]';
+          }
+
+          var html = '';
+          data.articles.forEach(function(article) {
+            var logoW = getLogoWidth(article.logo);
+            html +=
+              '<article>' +
+                '<a href="' + (article.url || '#') + '" aria-label="' + (article.title || '') + '" class="block aspect-[1147/606] w-full overflow-hidden bg-[#d9d9d9]">' +
+                  '<img src="' + (article.image || '') + '" alt="' + (article.image_alt || article.title || '') + '" class="h-full w-full object-cover object-center" />' +
+                '</a>' +
+                '<div class="mt-8 flex items-start justify-between gap-8 max-sm:mt-4 max-sm:gap-4">' +
+                  '<div class="max-w-[680px]">' +
+                    '<h3 class="text-[clamp(16px,1.25vw,22px)] font-normal leading-[1.18] tracking-[-0.01em] text-[#414040] max-sm:text-[15px]">' +
+                      '<a href="' + (article.url || '#') + '" class="hover:text-[rgba(32,32,32,0.68)]">' + (article.title || '') + '</a>' +
+                    '</h3>' +
+                    (article.date ? '<p class="mt-2 text-[11px] font-medium uppercase leading-[1.35] tracking-[0.02em] text-[rgba(32,32,32,0.55)]">' + article.date + '</p>' : '') +
+                    (article.summary ? '<p class="mt-2 max-w-[610px] text-[13px] leading-[1.55] text-[rgba(32,32,32,0.62)]">' + article.summary + '</p>' : '') +
+                  '</div>' +
+                  (article.logo ? '<img src="' + article.logo + '" alt="' + (article.publication_name || '') + '" class="mt-0 h-auto ' + logoW + ' shrink-0 object-contain" />' : '') +
+                '</div>' +
+              '</article>';
+          });
+          container.innerHTML = html;
+        })
+        .catch(function(err) {});
+    </script>
+  </body>
+</html>

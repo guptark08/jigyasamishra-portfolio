@@ -1,0 +1,144 @@
+{
+  "articles": [
+    {
+      "title": "‘We need freedom’: New Delhi women protest sexual violence",
+      "date": "4 October 2026",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/4/we-need-freedom-new-delhi-women-protest-sexual-violence",
+      "image": "assets/press/aljazeera-women-protest-delhi.jpg",
+      "image_alt": "Women in New Delhi protest sexual violence and call for systemic safety reforms",
+      "summary": "Protests erupt in New Delhi calling for women’s safety, justice, and systemic accountability following the alleged gang rape of a teenager.",
+      "logo": "logos/Al_jazeera_BW.webp",
+      "publication_name": "Al Jazeera"
+    },
+    {
+      "title": "‘I do not know if the doctor survived’: young mothers recall ‘living hell’ of Nepal’s floods",
+      "date": "30 September 2026",
+      "url": "https://www.theguardian.com/global-development/2026/sep/30/mothers-trauma-women-children-nepal-flash-floods",
+      "image": "blog-post-images/nepal-floods-mothers.jpg",
+      "image_alt": "‘I do not know if the doctor survived’: young mothers recall ‘living hell’ of Nepal’s floods",
+      "summary": "Kalpana Nepali was seven months pregnant when the flash floods hit, while Pooja Pariyal spent three days on a hospital roof waiting to be rescued. Now, they are living precariously in temporary shelters.",
+      "logo": "logos/The_Guardian_2018.svg",
+      "publication_name": "The Guardian"
+    },
+    {
+      "title": "‘Still a lockdown’: Deadly floods hit Nepal tourism as peak season begins",
+      "date": "28 September 2026",
+      "url": "https://www.aljazeera.com/news/2026/9/28/still-a-lockdown-deadly-floods-hit-nepal-tourism-as-peak-season-begins",
+      "image": "assets/press/aljazeera-nepal-tourism-floods.jpg",
+      "image_alt": "Nepal tourism hit by deadly floods",
+      "summary": "As Nepal recovers from devastating floods and blocked highways, over a million people dependent on peak-season tourism struggle to survive.",
+      "logo": "logos/Al_jazeera_BW.webp",
+      "publication_name": "Al Jazeera"
+    },
+    {
+      "title": "‘Orphaned’ by floods, more than 500 Nepali children face uncertain future",
+      "date": "22 September 2026",
+      "url": "https://www.aljazeera.com/news/2026/9/22/orphaned-by-floods-more-than-500-nepali-children-face-uncertain-future",
+      "image": "assets/press/aljazeera-orphaned-by-floods.jpg",
+      "image_alt": "Nepali children displaced by floods in temporary shelters",
+      "summary": "More than 500 children are left in temporary shelters with their parents missing or declared dead following catastrophic floods across Nepal.",
+      "logo": "logos/Al_jazeera_BW.webp",
+      "publication_name": "Al Jazeera"
+    },
+    {
+      "title": "पारि (PARI) पर ग्राउंड रिपोर्ट और लेख: ग्रामीण भारत की पड़ताल",
+      "date": "PARI Hindi Archive",
+      "url": "https://ruralindiaonline.org/search?q=jigyasa&locale=hi",
+      "image": "assets/press/pari-funeral-pyres-varanasi.jpg",
+      "image_alt": "पारि (PARI) पर ग्राउंड रिपोर्ट और दस्तावेजी कहानियां",
+      "summary": "पीपुल्स आर्काइव ऑफ़ रूरल इंडिया (PARI) पर महिलाओं के स्वास्थ्य, ग्रामीण आजीविका, श्रम, पर्यावरण और हाशिए के समुदायों पर आधारित ग्राउंड रिपोर्टिंग और सचित्र कहानियों का पूरा संग्रह।",
+      "logo": "logos/Pari_BW.webp",
+      "publication_name": "People's Archive of Rural India"
+    },
+    {
+      "title": "A village in Bihar refuses to let one of India’s oldest art forms die",
+      "date": "21 February 2026",
+      "url": "https://www.vogue.in/content/a-village-in-bihar-refuses-to-let-one-of-indias-oldest-art-forms-die",
+      "image": "assets/press/vogue-art-village.webp",
+      "image_alt": "Madhubani art village in Bihar",
+      "summary": "With many youngsters having migrated for work, it has fallen to the middle-aged and elderly to keep Jitwarpur and its Madhubani heritage going.",
+      "logo": "logos/Vogue Logo.svg",
+      "publication_name": "Vogue India"
+    },
+    {
+      "title": "In Khurja, an age-old ceramic craft adapts for the modern table",
+      "date": "28 March 2026",
+      "url": "https://www.cntraveller.in/story/in-khurja-an-age-old-ceramic-craft-adapts-for-the-modern-table/",
+      "image": "assets/press/khurja-ceramic-craft.webp",
+      "image_alt": "Handcrafted ceramics in Khurja",
+      "summary": "As India’s top hotels and restaurants source pottery and serveware from Khurja, the legacy craft is keeping up with the times.",
+      "logo": "logos/logo-cnt-india-reverse.svg",
+      "publication_name": "Condé Nast Traveller India"
+    },
+    {
+      "title": "Footprints of protest in the sands of a mine",
+      "date": "6 June 2020",
+      "url": "https://ruralindiaonline.org/article/footprints-of-protest-in-the-sands-of-a-mine",
+      "image": "assets/press/footprints-of-protest.webp",
+      "image_alt": "Farmers protesting sand mining in Banda",
+      "summary": "Farmers in Banda, Uttar Pradesh fight damage to their lands and the Ken river by a sand mining mafia.",
+      "logo": "logos/Pari_BW.webp",
+      "publication_name": "People's Archive of Rural India"
+    },
+    {
+      "title": "Locked-down schoolgirls: no basic needs, period",
+      "date": "12 May 2020",
+      "url": "https://ruralindiaonline.org/article/locked-down-schoolgirls-no-basic-needs-period",
+      "image": "assets/press/locked-down-schoolgirls.webp",
+      "image_alt": "Schoolgirls affected by lockdown period poverty",
+      "summary": "With schools shut, girls from poor families in Uttar Pradesh lost access to free sanitary napkins and turned to risky options.",
+      "logo": "logos/Pari_BW.webp",
+      "publication_name": "People's Archive of Rural India"
+    },
+    {
+      "title": "UP panchayats: for whom the polls toll",
+      "date": "10 May 2021",
+      "url": "https://ruralindiaonline.org/article/up-panchayats-for-whom-the-polls-toll",
+      "image": "assets/press/up-panchayats-polls-toll.webp",
+      "image_alt": "Uttar Pradesh panchayat election polling scene",
+      "summary": "Schoolteachers working as polling officials in the Uttar Pradesh panchayat elections died of Covid-19 as cases surged around the polls.",
+      "logo": "logos/Pari_BW.webp",
+      "publication_name": "People's Archive of Rural India"
+    },
+    {
+      "title": "In the dark: health care in Wazirithal",
+      "date": "17 November 2022",
+      "url": "https://ruralindiaonline.org/article/in-the-dark-health-care-in-wazirithal",
+      "image": "assets/press/wazirithal-health-care.webp",
+      "image_alt": "Health care in Wazirithal village",
+      "summary": "Pregnant women in Bandipore struggle with erratic power supply and poor public healthcare facilities.",
+      "logo": "logos/Pari_BW.webp",
+      "publication_name": "People's Archive of Rural India"
+    },
+    {
+      "title": "Raped, mocked by police for seeking justice: India’s rape laws do not cover transwomen",
+      "date": "7 July 2022",
+      "url": "https://article-14.com/post/raped-mocked-by-police-for-seeking-justice-india-s-rape-laws-do-not-cover-transwomen--62c65919a04a3",
+      "image": "assets/press/article14-transwomen.webp",
+      "image_alt": "Illustration of a transwoman for Article 14",
+      "summary": "A report on how gaps in India’s rape laws leave transwomen vulnerable to sexual violence and poor access to justice.",
+      "logo": "logos/article 14 logo.svg",
+      "publication_name": "Article 14"
+    },
+    {
+      "title": "‘We live, work in filth and are treated like filth:’ Punjab’s Dalit women caught in cycle of bonded work",
+      "date": "16 February 2022",
+      "url": "https://behanbox.com/2022/02/16/we-live-work-in-filth-and-are-treated-like-filth-punjabs-dalit-women-caught-in-cycle-of-bonded-work/",
+      "image": "assets/press/behanbox-dalit-women-bonded-work.webp",
+      "image_alt": "Dalit women workers in Punjab",
+      "summary": "A story on Dalit Sikh women in Punjab working in punishing conditions and trapped in cycles of caste, labour, and debt.",
+      "logo": "logos/behanbox logo.svg",
+      "publication_name": "BehanBox"
+    },
+    {
+      "title": "Women’s lives get harder in Bundelkhand as water scarcity grows",
+      "date": "8 July 2022",
+      "url": "https://dialogue.earth/en/water/womens-lives-get-harder-in-bundelkhand-as-water-scarcity-grows/",
+      "image": "blog-post-images/20220707_Kamlawati-goes-to-deliver-milk-with-her-husband-1024x751.webp",
+      "image_alt": "Kamlawati goes to deliver milk with her husband in Bundelkhand",
+      "summary": "Up to 70% of women in parts of drought-prone Bundelkhand are affected by acute water shortages, according to one NGO estimate.",
+      "logo": "logos/Dialogue-Earth-Logo-1.svg",
+      "publication_name": "Dialogue Earth"
+    }
+  ]
+}

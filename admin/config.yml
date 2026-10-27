@@ -1,0 +1,60 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: "assets/press"
+public_folder: "assets/press"
+
+collections:
+  - name: "press"
+    label: "Press & Panels"
+    files:
+      - label: "Press Articles"
+        name: "press_articles"
+        file: "data/press_articles.json"
+        format: "json"
+        fields:
+          - label: "Articles"
+            name: "articles"
+            widget: "list"
+            summary: "{{fields.title}} ({{fields.date}})"
+            fields:
+              - { label: "Title / Headline", name: "title", widget: "string" }
+              - { label: "Date (e.g. 4 October 2026)", name: "date", widget: "string" }
+              - { label: "Article URL Link", name: "url", widget: "string" }
+              - { label: "Cover Image", name: "image", widget: "image" }
+              - { label: "Image Alt Text", name: "image_alt", widget: "string", required: false }
+              - { label: "Summary / Description", name: "summary", widget: "text" }
+              - label: "Publication Logo"
+                name: "logo"
+                widget: "select"
+                options:
+                  - { label: "The Guardian", value: "logos/The_Guardian_2018.svg" }
+                  - { label: "Al Jazeera", value: "logos/Al_jazeera_BW.webp" }
+                  - { label: "People's Archive of Rural India (PARI)", value: "logos/Pari_BW.webp" }
+                  - { label: "Vogue India", value: "logos/Vogue Logo.svg" }
+                  - { label: "Condé Nast Traveller", value: "logos/logo-cnt-india-reverse.svg" }
+                  - { label: "Article 14", value: "logos/article 14 logo.svg" }
+                  - { label: "BehanBox", value: "logos/behanbox logo.svg" }
+                  - { label: "Dialogue Earth", value: "logos/Dialogue-Earth-Logo-1.svg" }
+                  - { label: "BBC", value: "logos/BBC-Logo-PNG-Images-HD.webp" }
+                  - { label: "Times of India", value: "logos/TOI.webp" }
+                  - { label: "Mongabay", value: "logos/mongabay_logo_news_black.svg" }
+              - { label: "Publication Name", name: "publication_name", widget: "string" }
+
+  - name: "home"
+    label: "Home Page"
+    files:
+      - label: "Recently Published Article"
+        name: "home_featured"
+        file: "data/home_featured.json"
+        format: "json"
+        fields:
+          - { label: "Headline", name: "title", widget: "string" }
+          - { label: "Article URL Link", name: "url", widget: "string" }
+          - { label: "Category / Tag (e.g. The Guardian | Global Development)", name: "tag", widget: "string" }
+          - { label: "Cover Image", name: "image", widget: "image" }
+          - { label: "Image Alt Text", name: "image_alt", widget: "string", required: false }
+          - { label: "Summary / Description", name: "summary", widget: "text" }
